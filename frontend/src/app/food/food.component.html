@@ -1,0 +1,35 @@
+
+<mat-toolbar color="primary" class="navbar">
+    <div>Food Panda</div>
+    <div>
+        <span>Home</span>
+        <span>About</span>
+        <span>Services</span>
+        <button mat-icon-button class="example-icon" aria-label="Example icon-button with share icon">
+            <mat-icon>shopping_cart</mat-icon>
+        </button>    
+    </div>
+</mat-toolbar>
+
+<mat-grid-list cols="3"  *ngFor="let food of foods">
+    <mat-grid-tile>
+        <mat-card class="example-card">
+            <mat-card-header>
+              <mat-card-title>{{ food.name }}</mat-card-title>
+            
+            </mat-card-header>
+
+            <img class="img" mat-card-image src="{{  food.imageURL }}" alt="Photo of a Shiba Inu">
+
+            <mat-card-content>
+                <p><strong>Price: </strong> {{ food.price }}</p>
+            </mat-card-content>
+            <mat-card-actions>
+              
+              <button mat-button>ADD TO CART</button>
+            </mat-card-actions>
+          </mat-card>
+    </mat-grid-tile>
+    
+  </mat-grid-list>
+  

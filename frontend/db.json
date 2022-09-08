@@ -1,0 +1,9 @@
+{
+  "foods": [
+    { "id": 1, "name": "Burger",  "imageURL": "https://images.unsplash.com/photo-1596649299486-4cdea56fd59d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80", "price": 1000 },
+   
+    { "id": 2, "name": "Pizza",  "imageURL": "https://images.unsplash.com/photo-1590947132387-155cc02f3212?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80", "price": 800  },
+
+    { "id": 3, "name": "Pasta",  "imageURL": "https://images.unsplash.com/photo-1555949258-eb67b1ef0ceb?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80", "price": 700  }
+  ]
+}

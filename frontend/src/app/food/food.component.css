@@ -1,0 +1,25 @@
+.badge{
+    margin: 3rem;
+}
+
+.navbar{
+    justify-content: space-between;
+}
+
+span{
+    padding-right: 1rem;
+}
+
+mat-sidenav-container{
+  height: 100%;
+}
+
+mat-sidenav, mat-sidenav-content{
+    background-color: lightcoral;
+    width: 200px;   
+}
+
+.img{
+    width: 33%;
+    height: 33%;
+}
