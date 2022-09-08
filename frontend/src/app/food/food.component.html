@@ -11,25 +11,24 @@
     </div>
 </mat-toolbar>
 
-<mat-grid-list cols="3"  *ngFor="let food of foods">
-    <mat-grid-tile>
-        <mat-card class="example-card">
+<div class="content">
+    <div fxLayout="row wrap" fxLayoutGap="2rem grid">
+        <div fxFlex="25%" fxFlex.xs="100%" fxFlex.sm="33%" *ngFor="let food of foods">
+            <mat-card class="mat-elevation-z4" >
             <mat-card-header>
-              <mat-card-title>{{ food.name }}</mat-card-title>
-            
+                <mat-card-title> {{food.name}}</mat-card-title>
             </mat-card-header>
-
-            <img class="img" mat-card-image src="{{  food.imageURL }}" alt="Photo of a Shiba Inu">
-
+            <img mat-card-image src="{{ food.imageURL }}">
             <mat-card-content>
-                <p><strong>Price: </strong> {{ food.price }}</p>
+                <p>
+                   <strong>Price:</strong><span id="priceVal">{{ food.price }}</span>
+                </p>
             </mat-card-content>
             <mat-card-actions>
-              
-              <button mat-button>ADD TO CART</button>
+                <button mat-button>LIKE</button>
+                <button mat-button>ADD TO CART</button>
             </mat-card-actions>
-          </mat-card>
-    </mat-grid-tile>
-    
-  </mat-grid-list>
-  
+            </mat-card>
+        </div>
+    </div>
+</div>

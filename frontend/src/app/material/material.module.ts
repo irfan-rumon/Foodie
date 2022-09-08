@@ -7,6 +7,9 @@ import {MatToolbarModule} from '@angular/material/toolbar';
 import {MatMenuModule} from '@angular/material/menu';
 import {MatGridListModule} from '@angular/material/grid-list';
 import {MatCardModule} from '@angular/material/card';
+import { FlexLayoutModule } from '@angular/flex-layout';
+
+
 
 const material = [
   MatButtonModule,
@@ -16,8 +19,9 @@ const material = [
   MatToolbarModule,
   MatMenuModule,
   MatGridListModule,
-  MatCardModule
-
+  MatCardModule,
+  FlexLayoutModule
+  
 ]
 
 @NgModule({
