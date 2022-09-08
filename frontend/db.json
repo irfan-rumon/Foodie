@@ -11,5 +11,8 @@
     { "id": 5, "name": "Fried Rice",  "imageURL": "https://images.unsplash.com/photo-1603133872878-684f208fb84b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1025&q=80", "price": 700  },
 
     { "id": 6, "name": "Sandwitch",  "imageURL": "https://images.unsplash.com/photo-1523529738216-242467d60007?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=491&q=80", "price": 700  }
+  ],
+  "products": [
+      { "id": 1, "name": "Burger",  "imageURL": "https://images.unsplash.com/photo-1596649299486-4cdea56fd59d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80", "unitPrice": 1000, "totalPrice": 2000, "quantity": 2  }
   ]
 }

@@ -1,0 +1,63 @@
+<div class="main-container" fxLayout="row">
+      
+        <div class="cart-detail" fxLayoutGap="7rem">    
+            <mat-toolbar fxLayout="row" >
+                <h1 style="margin: 0 3rem;">Product</h1>
+                <h1 style="margin-left: 7rem;">Unit Price</h1>
+                <h1 style="margin-left: 8rem;">Quantity</h1>
+                <h1 style="margin-left: 11rem;">Total</h1>
+            </mat-toolbar>
+            <div class="flex-container" fxLayout="column" *ngFor="let product of products">
+                <mat-card class="flex-container" fxLayout="row" >
+                   <img class="img-card" src="{{ product.imageURL }}" >
+                   <h2 style="margin-left: 1rem;">{{ product.name }}</h2>
+                   <h2 style="margin: 0 9rem">{{ product.unitPrice }}</h2>
+                   <button mat-button-raised class="card-btn"><mat-icon>remove</mat-icon></button>
+                   <h2 style="margin: 0 1rem;">{{ product.quantity }}</h2>
+                   <button mat-button-raised class="card-btn"><mat-icon>add</mat-icon></button>
+
+
+                   <h2 style="margin-left: 8rem;  margin-right: 3rem;">{{ product.totalPrice }}</h2>
+                   <button mat-button class="card-btn"><mat-icon class="delete-icon">delete</mat-icon></button>
+                </mat-card>       
+            </div>
+        </div>  
+
+        
+
+        <div class="payment-detail"> 
+            <div class="card-logo">
+              <img id="credit-card" src="https://banner2.cleanpng.com/20180824/hhu/kisspng-logo-brand-payment-image-product-design-cufflins-the-sultans-of-swag-5b7fa2a54e5f22.728151171535091365321.jpg" alt="cards" >
+              <mat-divider></mat-divider>
+            </div>
+            
+            
+            <div class="form-container">
+                <h2 style="margin-top: 1rem;">Card Name:</h2>
+                <mat-form-field class="example-full-width" appearance="fill"  class="full-width">
+                    <mat-label>Card Name</mat-label>
+                    <input type="text" matInput > 
+                </mat-form-field>    
+                <mat-divider></mat-divider>
+            </div> 
+           
+
+           
+            <div class="form-container">
+                <h2 style="margin-top: 1rem;">Card Number:</h2>
+                <mat-form-field  appearance="fill" class="full-width">
+                    <mat-label>Card Number</mat-label>
+                    <input type="text" matInput > 
+                </mat-form-field>  
+                <mat-divider></mat-divider>  
+            </div> 
+            
+
+            
+            <h3 style="margin-top: 1rem;">Subtotal:</h3>
+            <h3>Shipping:</h3>
+            <h3>Total (including Tax):</h3>
+            <mat-divider></mat-divider>
+            <button style="margin-left: 11rem;"mat-raised-button>Checkout</button>
+        </div>     
+</div>

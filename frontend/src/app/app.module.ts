@@ -9,13 +9,15 @@ import {MatSidenavModule} from '@angular/material/sidenav';
 import { FormsModule } from '@angular/forms';
 import { FoodComponent } from './food/food.component';
 import { HttpClientModule } from '@angular/common/http';
+import { CartComponent } from './cart/cart.component';
 
 
 
 @NgModule({
   declarations: [
     AppComponent,
-    FoodComponent
+    FoodComponent,
+    CartComponent
   ],
   imports: [
     BrowserModule,
