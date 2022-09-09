@@ -37,4 +37,11 @@ export class CartComponent implements OnInit {
        this.total += product.unitPrice;
   }
 
+  onMinusQuantity(product:Product){
+    product.quantity--;
+    product.totalPrice -= product.unitPrice;
+    this.subtotal -= product.unitPrice;
+    this.total -= product.unitPrice;
+  }
+
 }

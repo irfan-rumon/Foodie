@@ -12,7 +12,7 @@
                    <img class="img-card" src="{{ product.imageURL }}" >
                    <h2 style="margin-left: 1rem;">{{ product.name }}</h2>
                    <h2 style="margin: 0 9rem">{{ product.unitPrice }}</h2>
-                   <button mat-button-raised class="card-btn"><mat-icon>remove</mat-icon></button>
+                   <button (click)="onMinusQuantity(product)" mat-button-raised class="card-btn"><mat-icon>remove</mat-icon></button>
                    <h2 style="margin: 0 1rem;">{{ product.quantity }}</h2>
                    <button (click)="onAddQuantity(product)"  mat-button-raised class="card-btn"><mat-icon>add</mat-icon></button>
 
