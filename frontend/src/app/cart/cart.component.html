@@ -3,9 +3,9 @@
         <div class="cart-detail" fxLayoutGap="7rem">    
             <mat-toolbar fxLayout="row" >
                 <h1 style="margin: 0 3rem;">Product</h1>
-                <h1 style="margin-left: 7rem;">Unit Price</h1>
-                <h1 style="margin-left: 8rem;">Quantity</h1>
-                <h1 style="margin-left: 11rem;">Total</h1>
+                <h1 style="margin-left: 8rem;">Unit Price</h1>
+                <h1 style="margin-left: 9rem;">Quantity</h1>
+                <h1 style="margin-left: 9rem;">Total</h1>
             </mat-toolbar>
             <div class="flex-container" fxLayout="column" *ngFor="let product of products">
                 <mat-card class="flex-container" fxLayout="row" >
@@ -18,7 +18,7 @@
 
 
                    <h2 style="margin-left: 8rem;  margin-right: 3rem;">{{ product.totalPrice }}</h2>
-                   <button mat-button class="card-btn"><mat-icon class="delete-icon">delete</mat-icon></button>
+                   <button (click)="onProductDelete(product)"  mat-button  class="card-btn"><mat-icon  class="delete-icon">delete</mat-icon></button>
                 </mat-card>       
             </div>
         </div>  
