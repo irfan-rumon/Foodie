@@ -10,14 +10,7 @@ span{
     padding-right: 1rem;
 }
 
-mat-sidenav-container{
-  height: 100%;
-}
 
-mat-sidenav, mat-sidenav-content{
-    background-color: lightcoral;
-    width: 200px;   
-}
 
 .content {
     padding: 16px;
@@ -27,8 +20,9 @@ mat-sidenav, mat-sidenav-content{
     width: 200px;
 }
 
-img{
-    height: 21rem;
+.cart-img{
+    height: 10rem;
+    width: 12rem;
 }
 
 #priceVal{

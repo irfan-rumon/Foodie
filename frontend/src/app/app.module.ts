@@ -10,6 +10,7 @@ import { FormsModule } from '@angular/forms';
 import { FoodComponent } from './food/food.component';
 import { HttpClientModule } from '@angular/common/http';
 import { CartComponent } from './cart/cart.component';
+import { NavbarComponent } from './navbar/navbar.component';
 
 
 
@@ -17,7 +18,8 @@ import { CartComponent } from './cart/cart.component';
   declarations: [
     AppComponent,
     FoodComponent,
-    CartComponent
+    CartComponent,
+    NavbarComponent
   ],
   imports: [
     BrowserModule,
