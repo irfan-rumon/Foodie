@@ -31,7 +31,6 @@ export class CartapiService {
 
 
   addProduct(Product: Product): Observable<Product> {
-    console.log("add korte chai");
     return this.http.post<Product>(this.apiUrl, Product);
   }
 

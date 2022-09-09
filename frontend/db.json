@@ -43,8 +43,8 @@
       "imageURL": "https://images.unsplash.com/photo-1523529738216-242467d60007?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=491&q=80",
       "name": "Sandwitch",
       "unitPrice": 700,
-      "quantity": 1,
-      "totalPrice": 700
+      "quantity": 8,
+      "totalPrice": 5600
     },
     {
       "id": 3,
