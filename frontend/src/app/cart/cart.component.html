@@ -14,7 +14,7 @@
                    <h2 style="margin: 0 9rem">{{ product.unitPrice }}</h2>
                    <button mat-button-raised class="card-btn"><mat-icon>remove</mat-icon></button>
                    <h2 style="margin: 0 1rem;">{{ product.quantity }}</h2>
-                   <button mat-button-raised class="card-btn"><mat-icon>add</mat-icon></button>
+                   <button (click)="onAddQuantity(product)"  mat-button-raised class="card-btn"><mat-icon>add</mat-icon></button>
 
 
                    <h2 style="margin-left: 8rem;  margin-right: 3rem;">{{ product.totalPrice }}</h2>
@@ -54,9 +54,9 @@
             
 
             
-            <h3 style="margin-top: 1rem;">Subtotal:</h3>
-            <h3>Shipping:</h3>
-            <h3>Total (including Tax):</h3>
+            <div style="margin-top: 1rem;" fxLayout="row"><h3 >Subtotal:</h3><h2 class="costVal">{{ subtotal }}</h2></div>
+            <div fxLayout="row"><h3>Shipping:</h3> <h2  class="costVal">{{ shipping }}</h2></div>
+            <div fxLayout="row"><h3>Total (including Tax):</h3> <h2  class="costVal">{{ total }}</h2></div>
             <mat-divider></mat-divider>
             <button style="margin-left: 11rem;"mat-raised-button>Checkout</button>
         </div>     
