@@ -19,9 +19,10 @@ export class CartapiService {
 
   constructor(private http: HttpClient) { }
 
-  getProducts(): Observable<Product[]> {
+  getProducts(): Observable<Product[]>{
     return this.http.get<Product[]>(this.apiUrl);
   }
+
 
   getProduct(productId: any): Observable<Product> {
     const url = `${this.apiUrl}/${productId}`;
@@ -30,7 +31,8 @@ export class CartapiService {
 
 
   addProduct(Product: Product): Observable<Product> {
-    return this.http.post<Product>(this.apiUrl, Product, httpOptions);
+    console.log("add korte chai");
+    return this.http.post<Product>(this.apiUrl, Product);
   }
 
   editProduct(productId: any, Product:Product): Observable<Product> {

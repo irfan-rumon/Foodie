@@ -1,5 +1,5 @@
 export interface Food {
-    id?: number;
+    id: number;
     imageURL: string;
     name: string;
     price : number;

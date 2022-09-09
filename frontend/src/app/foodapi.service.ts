@@ -16,7 +16,7 @@ const httpOptions = {
 export class FoodapiService {
 
 
-  private apiUrl = 'http://localhost:3000/Foods';
+  private apiUrl = 'http://localhost:3000/foods';
 
   constructor(private http: HttpClient) {}
 
