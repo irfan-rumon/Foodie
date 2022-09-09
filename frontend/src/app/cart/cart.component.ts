@@ -2,6 +2,8 @@ import { Component, OnInit } from '@angular/core';
 import { Product } from '../product';
 import { CartapiService } from '../cartapi.service';
 import { Router } from '@angular/router';
+import { Payment } from '../payment';
+import { PaymentInfoService } from '../payment-info.service';
 
 @Component({
   selector: 'app-cart',
@@ -11,31 +13,25 @@ import { Router } from '@angular/router';
 export class CartComponent implements OnInit {
 
   products: Product[] = []; 
-  subtotal:number = 0;
-  shipping:number = 0;
-  total:number = 0;
+  payment: Payment;
+  
 
-  constructor(private cartApi: CartapiService, private router:Router) { }
+  constructor(private cartApi: CartapiService, private paymentApi: PaymentInfoService, private router:Router) { }
 
   ngOnInit(): void {
     this.cartApi.getProducts().subscribe(  (products) => {
       this.products = products;
     } );
-    if( this.products.length > 0){
-      this.shipping = 50;
-    }
-    else this.shipping = 0;
-    for(let i = 0; i < this.products.length; i++)
-    {
-      this.subtotal += this.products[i].totalPrice;
-      this.total = this.products[i].totalPrice + this.total + this.shipping;
-    }
-
+    this.paymentApi.getPaymentInfo().subscribe(  (payment)=>{
+        this.payment = payment;
+    } )
   }
+
 
   onProductDelete(product:Product){
      this.cartApi.deleteProduct(product).subscribe();
      window.location.reload();
+   
   }
 
   onAddQuantity(product:Product){
@@ -49,7 +45,8 @@ export class CartComponent implements OnInit {
       }
 
       this.cartApi.editProduct(product.id, updatedProduct).subscribe();
-       window.location.reload();
+      window.location.reload();
+      
   }
 
   onMinusQuantity(product:Product){
@@ -64,7 +61,7 @@ export class CartComponent implements OnInit {
     }
 
     this.cartApi.editProduct(product.id, updatedProduct).subscribe();
-     window.location.reload();
+    window.location.reload();
   }
 
 }
