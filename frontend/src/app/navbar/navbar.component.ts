@@ -14,7 +14,7 @@ export class NavbarComponent implements OnInit {
   }
 
   onCartNavigator(){
-     this.router.navigate(['/cart']);
+     this.router.navigate(['/carts']);
   }
 
   onHomeNavigator(){

@@ -12,7 +12,7 @@ import { PaymentInfoService } from '../payment-info.service';
 })
 export class CartComponent implements OnInit {
 
-  products: Product[] = []; 
+  cartProducts: Product[] = []; 
   payment: Payment;
   
 
@@ -20,7 +20,7 @@ export class CartComponent implements OnInit {
 
   ngOnInit(): void {
     this.cartApi.getProducts().subscribe(  (products) => {
-      this.products = products;
+      this.cartProducts = products;
     } );
     this.paymentApi.getPaymentInfo().subscribe(  (payment)=>{
         this.payment = payment;
@@ -30,8 +30,18 @@ export class CartComponent implements OnInit {
 
   onProductDelete(product:Product){
      this.cartApi.deleteProduct(product).subscribe();
-     window.location.reload();
-   
+
+     let updatedSubTotal = this.payment.subtotal - product.totalPrice;
+     let updatedTotal = this.payment.total - product.totalPrice ;
+      let updatedPayment:Payment = {
+         subtotal : updatedSubTotal,
+         shipping: 50,
+         total: updatedTotal
+      }
+
+      this.cartApi.deleteProduct(product).subscribe();
+      this.paymentApi.editPaymentInfo(updatedPayment).subscribe();
+      window.location.reload();
   }
 
   onAddQuantity(product:Product){
@@ -41,10 +51,21 @@ export class CartComponent implements OnInit {
         name: product.name,
         unitPrice : product.unitPrice,
         quantity: product.quantity + 1,
-        totalPrice : product.totalPrice + product.unitPrice
+        totalPrice : product.totalPrice + product.unitPrice,
+        addedToCart: true
+      }
+
+     
+      let updatedSubTotal = this.payment.subtotal + product.unitPrice;
+      let updatedTotal = this.payment.total + product.unitPrice + 50 ;
+      let updatedPayment:Payment = {
+         subtotal : updatedSubTotal,
+         shipping: 50,
+         total: updatedTotal
       }
 
       this.cartApi.editProduct(product.id, updatedProduct).subscribe();
+      this.paymentApi.editPaymentInfo(updatedPayment).subscribe();
       window.location.reload();
       
   }
@@ -57,10 +78,20 @@ export class CartComponent implements OnInit {
       name: product.name,
       unitPrice : product.unitPrice,
       quantity: product.quantity - 1,
-      totalPrice : product.totalPrice - product.unitPrice
+      totalPrice : product.totalPrice - product.unitPrice,
+      addedToCart : true
+    }
+
+    let updatedSubTotal = this.payment.subtotal - product.unitPrice;
+    let updatedTotal = this.payment.total - product.unitPrice + 50;
+    let updatedPayment:Payment = {
+       subtotal : updatedSubTotal,
+       shipping: 50,
+       total: updatedTotal
     }
 
     this.cartApi.editProduct(product.id, updatedProduct).subscribe();
+    this.paymentApi.editPaymentInfo(updatedPayment).subscribe();
     window.location.reload();
   }
 

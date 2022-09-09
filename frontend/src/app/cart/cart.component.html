@@ -7,7 +7,7 @@
                 <h1 style="margin-left: 9rem;">Quantity</h1>
                 <h1 style="margin-left: 9rem;">Total</h1>
             </mat-toolbar>
-            <div class="flex-container" fxLayout="column" *ngFor="let product of products">
+            <div class="flex-container" fxLayout="column" *ngFor="let product of cartProducts">
                 <mat-card class="flex-container" fxLayout="row" >
                    <img class="img-card" src="{{ product.imageURL }}" >
                    <h2 style="margin-left: 1rem;">{{ product.name }}</h2>

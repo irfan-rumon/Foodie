@@ -20,7 +20,6 @@ export class PaymentInfoService {
   constructor(private http: HttpClient) { }
 
   getPaymentInfo(): Observable<Payment>{
-    console.log("entered");
     return this.http.get<Payment>(this.apiUrl);
   }
 

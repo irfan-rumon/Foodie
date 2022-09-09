@@ -5,5 +5,6 @@ export interface Product {
     unitPrice : number;
     quantity: number;
     totalPrice : number;
+    addedToCart: boolean ;
 
   }

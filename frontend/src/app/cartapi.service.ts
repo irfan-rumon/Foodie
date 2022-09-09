@@ -14,19 +14,13 @@ const httpOptions = {
 })
 export class CartapiService {
 
-  private apiUrl = 'http://localhost:3000/products';
+  private apiUrl = 'http://localhost:3000/carts';
 
 
   constructor(private http: HttpClient) { }
 
   getProducts(): Observable<Product[]>{
     return this.http.get<Product[]>(this.apiUrl);
-  }
-
-
-  getProduct(productId: any): Observable<Product> {
-    const url = `${this.apiUrl}/${productId}`;
-    return this.http.get<Product>(url);
   }
 
 

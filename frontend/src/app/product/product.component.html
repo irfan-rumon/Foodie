@@ -3,23 +3,24 @@
 
 <div class="content">
     <div fxLayout="row wrap" fxLayoutGap="2rem grid">
-        <div fxFlex="25%" fxFlex.xs="100%" fxFlex.sm="33%" *ngFor="let food of foods">
+        <div fxFlex="25%" fxFlex.xs="100%" fxFlex.sm="33%" *ngFor="let product of products">
             <mat-card class="mat-elevation-z4" >
             <mat-card-header>
-                <mat-card-title> {{food.name}}</mat-card-title>
+                <mat-card-title> {{product.name}}</mat-card-title>
             </mat-card-header>
-            <img class="cart-img" mat-card-image src="{{ food.imageURL }}">
+            <img class="cart-img" mat-card-image src="{{ product.imageURL }}">
             <mat-card-content>
                 <p>
-                   <strong>Price:</strong><span id="priceVal">{{ food.price }}</span>
+                   <strong>Price:</strong><span id="priceVal">{{ product.unitPrice }}</span>
                 </p>
             </mat-card-content>
             <mat-card-actions>
                 <button mat-button>LIKE</button>
-                <button (click)="onCart(food)" mat-button>ADD TO CART</button>
+                <button (click)="addToCart(product)" mat-button>ADD TO CART</button>
             </mat-card-actions>
             </mat-card>
         </div>
     </div>
 </div>
+
 
