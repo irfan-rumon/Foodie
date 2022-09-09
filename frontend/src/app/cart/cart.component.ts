@@ -53,10 +53,18 @@ export class CartComponent implements OnInit {
   }
 
   onMinusQuantity(product:Product){
-    product.quantity--;
-    product.totalPrice -= product.unitPrice;
-    this.subtotal -= product.unitPrice;
-    this.total -= product.unitPrice;
+    if( product.quantity == 0)return;
+    let updatedProduct:Product = {
+      id: product.id,
+      imageURL: product.imageURL,
+      name: product.name,
+      unitPrice : product.unitPrice,
+      quantity: product.quantity - 1,
+      totalPrice : product.totalPrice - product.unitPrice
+    }
+
+    this.cartApi.editProduct(product.id, updatedProduct).subscribe();
+     window.location.reload();
   }
 
 }
