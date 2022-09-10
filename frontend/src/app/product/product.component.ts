@@ -33,15 +33,17 @@ export class ProductComponent implements OnInit {
  
 
   addToCart(product:Product){
+   
+
     let flag = false;
-    for(let i = 0; i < this.products.length; i++){
-        if(  this.products[i].name = product.name  ){
-           if(this.products[i].addedToCart == true)flag=true;
+    for(let i = 0; i < this.cartProducts.length; i++){
+        if(  this.cartProducts[i].name == product.name  ){
+           if(this.cartProducts[i].addedToCart == true)flag=true;
         }
     }
     if( flag == true ){
       this.router.navigate(['/carts']);
-      console.log("Htt");
+     
       return;
     }
 

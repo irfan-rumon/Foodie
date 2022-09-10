@@ -29,8 +29,7 @@ export class CartComponent implements OnInit {
 
 
   onProductDelete(product:Product){
-     this.cartApi.deleteProduct(product).subscribe();
-
+    
      let updatedSubTotal = this.payment.subtotal - product.totalPrice;
      let updatedTotal = this.payment.total - product.totalPrice ;
       let updatedPayment:Payment = {
@@ -57,7 +56,7 @@ export class CartComponent implements OnInit {
 
      
       let updatedSubTotal = this.payment.subtotal + product.unitPrice;
-      let updatedTotal = this.payment.total + product.unitPrice + 50 ;
+      let updatedTotal = this.payment.total + product.unitPrice ;
       let updatedPayment:Payment = {
          subtotal : updatedSubTotal,
          shipping: 50,
@@ -83,7 +82,7 @@ export class CartComponent implements OnInit {
     }
 
     let updatedSubTotal = this.payment.subtotal - product.unitPrice;
-    let updatedTotal = this.payment.total - product.unitPrice + 50;
+    let updatedTotal = this.payment.total - product.unitPrice ;
     let updatedPayment:Payment = {
        subtotal : updatedSubTotal,
        shipping: 50,

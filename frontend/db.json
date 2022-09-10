@@ -50,9 +50,9 @@
     }
   ],
   "payment": {
-    "subtotal": 4900,
+    "subtotal": 2800,
     "shipping": 50,
-    "total": 4950
+    "total": 2850
   },
   "carts": [
     {
@@ -60,26 +60,8 @@
       "imageURL": "https://images.unsplash.com/photo-1590947132387-155cc02f3212?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80",
       "name": "Pizzza",
       "unitPrice": 900,
-      "quantity": 1,
-      "totalPrice": 900,
-      "addedToCart": true
-    },
-    {
-      "id": 3,
-      "imageURL": "https://images.unsplash.com/photo-1555949258-eb67b1ef0ceb?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80",
-      "name": "Pastaa",
-      "unitPrice": 600,
-      "quantity": 1,
-      "totalPrice": 600,
-      "addedToCart": true
-    },
-    {
-      "id": 4,
-      "imageURL": "https://images.unsplash.com/photo-1634864572865-1cf8ff8bd23d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1334&q=80",
-      "name": "Nodles",
-      "unitPrice": 700,
-      "quantity": 1,
-      "totalPrice": 700,
+      "quantity": 2,
+      "totalPrice": 1800,
       "addedToCart": true
     }
   ]
