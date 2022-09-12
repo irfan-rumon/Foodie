@@ -28,7 +28,13 @@ mat-card{
    width: 66%;
 }
 
+.cell{
+    width: 9rem;
+}
 
+.cell-padding{
+    padding-left: 10rem;
+}
 
 .full-width{
     width: 95%;

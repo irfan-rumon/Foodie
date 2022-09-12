@@ -17,6 +17,7 @@ export class ProductComponent implements OnInit {
   products : Product[] = [];
   payment: Payment;
   cartProducts: Product[] = []; 
+  
 
   constructor(  private paymentApi: PaymentInfoService, private productApi: ProductapiService, private cartApi: CartapiService, private router: Router  ) { }
 
@@ -42,8 +43,6 @@ export class ProductComponent implements OnInit {
         }
     }
     if( flag == true ){
-      this.router.navigate(['/carts']);
-     
       return;
     }
 
@@ -73,7 +72,6 @@ export class ProductComponent implements OnInit {
     this.cartApi.addProduct(updatedProduct).subscribe();
     this.paymentApi.editPaymentInfo(updatedPayment).subscribe();
     
-    this.router.navigate(['/carts']);
   }
 
 

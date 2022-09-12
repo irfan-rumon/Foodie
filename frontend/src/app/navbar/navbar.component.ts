@@ -1,5 +1,6 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 import { Router } from '@angular/router';
+import { CartapiService } from '../cartapi.service';
 
 @Component({
   selector: 'app-navbar',
@@ -8,9 +9,13 @@ import { Router } from '@angular/router';
 })
 export class NavbarComponent implements OnInit {
 
-  constructor(private router:Router) { }
+  @Input()  numCartProducts: number;
+
+  constructor(private router:Router, private cartApi: CartapiService) { }
 
   ngOnInit(): void {
+    this.numCartProducts = this.cartApi.getNumCartProducts();
+    console.log(this.numCartProducts);
   }
 
   onCartNavigator(){

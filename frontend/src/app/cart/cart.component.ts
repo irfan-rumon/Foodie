@@ -13,6 +13,7 @@ import { PaymentInfoService } from '../payment-info.service';
 export class CartComponent implements OnInit {
 
   cartProducts: Product[] = []; 
+  numOfCartProducts: number;
   payment: Payment;
   
 
@@ -25,6 +26,7 @@ export class CartComponent implements OnInit {
     this.paymentApi.getPaymentInfo().subscribe(  (payment)=>{
         this.payment = payment;
     } )
+    this.numOfCartProducts = this.cartProducts.length;
   }
 
 
@@ -55,8 +57,8 @@ export class CartComponent implements OnInit {
       }
 
      
-      let updatedSubTotal = this.payment.subtotal + product.unitPrice;
-      let updatedTotal = this.payment.total + product.unitPrice ;
+      let updatedSubTotal:number = this.payment.subtotal + product.unitPrice;
+      let updatedTotal:number = this.payment.total + product.unitPrice ;
       let updatedPayment:Payment = {
          subtotal : updatedSubTotal,
          shipping: 50,
@@ -70,7 +72,11 @@ export class CartComponent implements OnInit {
   }
 
   onMinusQuantity(product:Product){
-    if( product.quantity == 0)return;
+   
+    if( product.quantity == 1){
+      this.onProductDelete(product);
+      return;
+    }
     let updatedProduct:Product = {
       id: product.id,
       imageURL: product.imageURL,
@@ -91,6 +97,7 @@ export class CartComponent implements OnInit {
 
     this.cartApi.editProduct(product.id, updatedProduct).subscribe();
     this.paymentApi.editPaymentInfo(updatedPayment).subscribe();
+    
     window.location.reload();
   }
 

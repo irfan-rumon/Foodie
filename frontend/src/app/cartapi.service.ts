@@ -23,6 +23,11 @@ export class CartapiService {
     return this.http.get<Product[]>(this.apiUrl);
   }
 
+  getNumCartProducts(){
+    let products: Product[];
+    this.getProducts().subscribe( (res)=>{products = res;}  );
+    return this.getNumCartProducts.length;
+  }
 
   addProduct(Product: Product): Observable<Product> {
     return this.http.post<Product>(this.apiUrl, Product);
