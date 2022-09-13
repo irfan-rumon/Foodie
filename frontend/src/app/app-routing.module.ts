@@ -7,10 +7,10 @@ import { ForgotPasswordComponent } from './auth/forgot-password/forgot-password.
 import { NotFoundComponent } from './auth/not-found/not-found.component';
 
 const routes: Routes = [
-   //{path: '', redirectTo: '/login', pathMatch: 'full'},
-   {path: '', component: ProductComponent},
+   {path: '', redirectTo: '/login', pathMatch: 'full'},
+   {path: 'product', component: ProductComponent},
    {path: 'carts', component: CartComponent},
-  // {path: 'login', component: LoginComponent},
+   {path: 'login', component: LoginComponent},
    {path: 'forgot-password', component: ForgotPasswordComponent},
    {
        path: 'admin',  loadChildren: () => import('./admin/admin.module').then( (m)=>m.AdminModule) 

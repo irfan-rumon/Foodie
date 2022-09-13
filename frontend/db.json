@@ -57,8 +57,8 @@
   ],
   "carts": [],
   "payment": {
-    "subtotal": 900,
-    "shipping": 50,
-    "total": 900
+    "subtotal": 0,
+    "shipping": 0,
+    "total": 0
   }
 }

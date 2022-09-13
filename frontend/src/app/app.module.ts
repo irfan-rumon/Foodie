@@ -25,7 +25,7 @@ import { ProductComponent } from './product/product.component';
 import { LoginComponent } from './auth/login/login.component';
 import { ForgotPasswordComponent } from './auth/forgot-password/forgot-password.component';
 import { NotFoundComponent } from './auth/not-found/not-found.component';
-import { PaymentInfoComponent } from './payment-info/payment-info.component';
+
 
 
 
@@ -38,7 +38,7 @@ import { PaymentInfoComponent } from './payment-info/payment-info.component';
     LoginComponent,
     ForgotPasswordComponent,
     NotFoundComponent,
-    PaymentInfoComponent
+
   ],
   imports: [
     BrowserModule,
