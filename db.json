@@ -5,62 +5,79 @@
       "name": "Burger",
       "imageURL": "https://images.unsplash.com/photo-1568901346375-23c9450c58cd?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=999&q=80",
       "unitPrice": 1000,
-       "quantity" : 0,
-       "totalPrice" : 0,
-       "addedToCart" : false
+      "quantity": 0,
+      "totalPrice": 0,
+      "addedToCart": false
     },
     {
       "id": 2,
       "name": "Pizzza",
       "imageURL": "https://images.unsplash.com/photo-1590947132387-155cc02f3212?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80",
       "unitPrice": 900,
-      "quantity" : 0,
-      "totalPrice" : 0,
-      "addedToCart" : false
+      "quantity": 0,
+      "totalPrice": 0,
+      "addedToCart": false
     },
     {
       "id": 3,
       "name": "Pastaa",
       "imageURL": "https://images.unsplash.com/photo-1555949258-eb67b1ef0ceb?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80",
       "unitPrice": 600,
-       "quantity" : 0,
-       "totalPrice" : 0,
-       "addedToCart" : false
+      "quantity": 0,
+      "totalPrice": 0,
+      "addedToCart": false
     },
     {
       "id": 4,
       "name": "Nodles",
       "imageURL": "https://images.unsplash.com/photo-1634864572865-1cf8ff8bd23d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1334&q=80",
       "unitPrice": 700,
-      "quantity" : 0,
-      "totalPrice" : 0,
-      "addedToCart" : false
+      "quantity": 0,
+      "totalPrice": 0,
+      "addedToCart": false
     },
     {
       "id": 5,
       "name": "Fried Rice",
       "imageURL": "https://images.unsplash.com/photo-1603133872878-684f208fb84b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1025&q=80",
       "unitPrice": 500,
-       "quantity" : 0,
-       "totalPrice" : 0,
-       "addedToCart" : false
+      "quantity": 0,
+      "totalPrice": 0,
+      "addedToCart": false
     },
     {
       "id": 6,
       "name": "Sandwitch",
       "imageURL": "https://images.unsplash.com/photo-1523529738216-242467d60007?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=491&q=80",
       "unitPrice": 300,
-       "quantity" : 0,
-       "totalPrice" : 0,
-       "addedToCart" : false
+      "quantity": 0,
+      "totalPrice": 0,
+      "addedToCart": false
     }
   ],
   "payment": {
-    "subtotal": 0,
-    "shipping": 0,
-    "total": 0,
-    "addedToCart" : false
+    "subtotal": 2400,
+    "shipping": 50,
+    "total": 2450
   },
-  
-  "carts": []
+  "carts": [
+    {
+      "id": 2,
+      "imageURL": "https://images.unsplash.com/photo-1590947132387-155cc02f3212?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80",
+      "name": "Pizzza",
+      "unitPrice": 900,
+      "quantity": 3,
+      "totalPrice": 2700,
+      "addedToCart": true
+    },
+    {
+      "id": 3,
+      "imageURL": "https://images.unsplash.com/photo-1555949258-eb67b1ef0ceb?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80",
+      "name": "Pastaa",
+      "unitPrice": 600,
+      "quantity": 1,
+      "totalPrice": 600,
+      "addedToCart": true
+    }
+  ]
 }

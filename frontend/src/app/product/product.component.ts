@@ -71,6 +71,7 @@ export class ProductComponent implements OnInit {
 
     this.cartApi.addProduct(updatedProduct).subscribe();
     this.paymentApi.editPaymentInfo(updatedPayment).subscribe();
+    window.location.reload();
     
   }
 

@@ -16,7 +16,6 @@ export class CartapiService {
 
   private apiUrl = 'http://localhost:3000/carts';
 
-
   constructor(private http: HttpClient) { }
 
   getProducts(): Observable<Product[]>{

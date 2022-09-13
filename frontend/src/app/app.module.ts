@@ -22,6 +22,9 @@ import { HttpClientModule } from '@angular/common/http';
 import { CartComponent } from './cart/cart.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { ProductComponent } from './product/product.component';
+import { LoginComponent } from './auth/login/login.component';
+import { ForgotPasswordComponent } from './auth/forgot-password/forgot-password.component';
+import { NotFoundComponent } from './auth/not-found/not-found.component';
 
 
 
@@ -30,7 +33,10 @@ import { ProductComponent } from './product/product.component';
     AppComponent,
     CartComponent,
     NavbarComponent,
-    ProductComponent
+    ProductComponent,
+    LoginComponent,
+    ForgotPasswordComponent,
+    NotFoundComponent
   ],
   imports: [
     BrowserModule,

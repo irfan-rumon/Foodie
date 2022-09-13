@@ -2,10 +2,17 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { ProductComponent } from './product/product.component';
 import { CartComponent } from './cart/cart.component';
+import { LoginComponent } from './auth/login/login.component';
+import { ForgotPasswordComponent } from './auth/forgot-password/forgot-password.component';
+import { NotFoundComponent } from './auth/not-found/not-found.component';
 
 const routes: Routes = [
-   {path: '', component: ProductComponent},
-   {path: 'carts', component: CartComponent}
+   {path: '', redirectTo: '/login', pathMatch: 'full'},
+   {path: 'products', component: ProductComponent},
+   {path: 'carts', component: CartComponent},
+   {path: 'login', component: LoginComponent},
+   {path: 'forgot-password', component: ForgotPasswordComponent},
+   {path: '**', component: NotFoundComponent}
 ];
 
 @NgModule({
