@@ -8,7 +8,7 @@ import { NotFoundComponent } from './auth/not-found/not-found.component';
 
 const routes: Routes = [
    {path: '', redirectTo: '/login', pathMatch: 'full'},
-   {path: 'product', component: ProductComponent},
+   {path: 'producs', component: ProductComponent},
    {path: 'carts', component: CartComponent},
    {path: 'login', component: LoginComponent},
    {path: 'forgot-password', component: ForgotPasswordComponent},
