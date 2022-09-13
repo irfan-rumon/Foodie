@@ -55,29 +55,15 @@
       "addedToCart": false
     }
   ],
-  "payment": {
-    "subtotal": 2400,
-    "shipping": 50,
-    "total": 2450
-  },
+  
   "carts": [
-    {
-      "id": 2,
-      "imageURL": "https://images.unsplash.com/photo-1590947132387-155cc02f3212?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80",
-      "name": "Pizzza",
-      "unitPrice": 900,
-      "quantity": 3,
-      "totalPrice": 2700,
-      "addedToCart": true
-    },
-    {
-      "id": 3,
-      "imageURL": "https://images.unsplash.com/photo-1555949258-eb67b1ef0ceb?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80",
-      "name": "Pastaa",
-      "unitPrice": 600,
-      "quantity": 1,
-      "totalPrice": 600,
-      "addedToCart": true
-    }
-  ]
+   
+  ],
+
+  "payment" : 
+  {
+      "subtotal" : 0,
+      "shipping" : 0,
+      "total" : 0
+  }
 }

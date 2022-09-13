@@ -14,7 +14,7 @@ export class CartComponent implements OnInit {
 
   cartProducts: Product[] = []; 
   numOfCartProducts: number;
-  payment: Payment;
+  payment: Payment = {} as Payment;
   
 
   constructor(private cartApi: CartapiService, private paymentApi: PaymentInfoService, private router:Router) { }

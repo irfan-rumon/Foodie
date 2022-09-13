@@ -1,0 +1,51 @@
+
+.main-container{
+    margin: 1rem;
+}
+
+mat-card{
+    background-color: white;
+}
+
+.costVal{
+   margin-left: 1rem;
+}
+
+.delete-icon{
+  margin-left: 5rem;
+}
+
+.card-btn{
+    height: 2.5rem;
+}
+
+.img-card{
+    width: 5rem;
+    height: 4rem;
+}
+
+.cart-detail{
+   width: 66%;
+}
+
+.cell{
+    width: 9rem;
+}
+
+.cell-padding{
+    padding-left: 10rem;
+}
+
+.full-width{
+    width: 95%;
+}
+
+.payment-detail{
+  margin-left: 1rem;  
+  background-color: #eee;
+  padding-left: 1rem;
+}
+#credit-card{
+    height: 8rem;
+    width: 30rem;
+}

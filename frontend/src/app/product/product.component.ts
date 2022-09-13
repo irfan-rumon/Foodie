@@ -22,11 +22,13 @@ export class ProductComponent implements OnInit {
   constructor(  private paymentApi: PaymentInfoService, private productApi: ProductapiService, private cartApi: CartapiService, private router: Router  ) { }
 
   ngOnInit(): void {
-     this.productApi.getProducts().subscribe(  (products)=>(this.products = products)    );
-     this.paymentApi.getPaymentInfo().subscribe(  (payment)=>{
+    this.productApi.getProducts().subscribe(  (products)=>(this.products = products)    );
+    
+    this.paymentApi.getPaymentInfo().subscribe(  (payment)=>{
       this.payment = payment;
       } ) ;
-      this.cartApi.getProducts().subscribe(  (products) => {
+    
+    this.cartApi.getProducts().subscribe(  (products) => {
         this.cartProducts = products;
       } );
    }
@@ -35,7 +37,6 @@ export class ProductComponent implements OnInit {
 
   addToCart(product:Product){
    
-
     let flag = false;
     for(let i = 0; i < this.cartProducts.length; i++){
         if(  this.cartProducts[i].name == product.name  ){
@@ -69,9 +70,10 @@ export class ProductComponent implements OnInit {
        total: updatedTotal
     }
 
-    this.cartApi.addProduct(updatedProduct).subscribe();
+    this.cartApi.addProduct(updatedProduct).subscribe( 
+      (product)=>{this.cartProducts.push(updatedProduct)} );//Internal array te push
     this.paymentApi.editPaymentInfo(updatedPayment).subscribe();
-    window.location.reload();
+   
     
   }
 

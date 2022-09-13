@@ -1,0 +1,49 @@
+<div class="payment-detail"> 
+    <div class="card-logo">
+      <img id="credit-card" src="https://banner2.cleanpng.com/20180824/hhu/kisspng-logo-brand-payment-image-product-design-cufflins-the-sultans-of-swag-5b7fa2a54e5f22.728151171535091365321.jpg" alt="cards" >
+      <mat-divider></mat-divider>
+    </div>
+    
+    
+    <div class="form-container">
+        <h2 style="margin-top: 1rem;">Card Name:</h2>
+        <mat-form-field class="example-full-width" appearance="fill"  class="full-width">
+            <mat-label>Card Name</mat-label>
+            <input type="text" matInput > 
+        </mat-form-field>    
+        <mat-divider></mat-divider>
+    </div> 
+   
+
+   
+    <div class="form-container">
+        <h2 style="margin-top: 1rem;">Card Number:</h2>
+        <mat-form-field  appearance="fill" class="full-width">
+            <mat-label>Card Number</mat-label>
+            <input type="text" matInput > 
+        </mat-form-field>  
+        <mat-divider></mat-divider>  
+    </div> 
+    
+
+    
+    <div style="margin-top: 1rem;" fxLayout="row">
+          <h3 >Subtotal:</h3>
+          <h2>{{ payment.subtotal }}</h2>
+
+    </div>
+
+    <div fxLayout="row">
+        <h3>Total (including Tax):</h3> 
+        <h2>  {{  payment.shipping  }}   </h2>
+    </div>
+
+   
+    <div fxLayout="row">
+          <h3>Total (including Tax):</h3> 
+          <h2>  {{payment.shipping }}   </h2>
+    </div>
+
+    <mat-divider></mat-divider>
+    <button style="margin-left: 11rem;"mat-raised-button>Checkout</button>
+</div>   
