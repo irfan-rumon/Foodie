@@ -55,29 +55,10 @@
       "addedToCart": false
     }
   ],
-  "carts": [
-    {
-      "id": 2,
-      "imageURL": "https://images.unsplash.com/photo-1590947132387-155cc02f3212?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80",
-      "name": "Pizzza",
-      "unitPrice": 900,
-      "quantity": 1,
-      "totalPrice": 900,
-      "addedToCart": true
-    },
-    {
-      "id": 4,
-      "imageURL": "https://images.unsplash.com/photo-1634864572865-1cf8ff8bd23d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1334&q=80",
-      "name": "Nodles",
-      "unitPrice": 700,
-      "quantity": 1,
-      "totalPrice": 700,
-      "addedToCart": true
-    }
-  ],
+  "carts": [],
   "payment": {
-    "subtotal": 1600,
+    "subtotal": 900,
     "shipping": 50,
-    "total": 1650
+    "total": 900
   }
 }
