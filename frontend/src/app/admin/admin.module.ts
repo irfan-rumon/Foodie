@@ -6,6 +6,8 @@ import { AdminDashboardComponent } from './admin-dashboard/admin-dashboard.compo
 import { AdminHeaderComponent } from './admin-header/admin-header.component';
 import { AdminFooterComponent } from './admin-footer/admin-footer.component';
 import { AdminProductsComponent } from './admin-products/admin-products.component';
+import { AddProductsComponent } from './add-products/add-products.component';
+import { FormsModule } from '@angular/forms';
 
 
 
@@ -15,11 +17,15 @@ import { AdminProductsComponent } from './admin-products/admin-products.componen
     AdminHeaderComponent,
     AdminFooterComponent,
     AdminProductsComponent,
+    AddProductsComponent,
+   
    
   ],
   imports: [
     CommonModule,
-    AdminRoutingModule
+    AdminRoutingModule,
+    FormsModule
   ]
+  
 })
 export class AdminModule { }
