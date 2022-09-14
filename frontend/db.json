@@ -7,7 +7,8 @@
       "unitPrice": 1000,
       "quantity": 0,
       "totalPrice": 0,
-      "addedToCart": false
+      "addedToCart": false,
+      "catagory" : "Fast Food"
     },
     {
       "id": 2,
@@ -16,7 +17,8 @@
       "unitPrice": 900,
       "quantity": 0,
       "totalPrice": 0,
-      "addedToCart": false
+      "addedToCart": false,
+      "catagory" : "Fast Food"
     },
     {
       "id": 3,
@@ -25,7 +27,8 @@
       "unitPrice": 600,
       "quantity": 0,
       "totalPrice": 0,
-      "addedToCart": false
+      "addedToCart": false,
+      "catagory" : "Fast Food"
     },
     {
       "id": 4,
@@ -34,7 +37,8 @@
       "unitPrice": 700,
       "quantity": 0,
       "totalPrice": 0,
-      "addedToCart": false
+      "addedToCart": false,
+      "catagory" : "Chinese"
     },
     {
       "id": 5,
@@ -43,7 +47,8 @@
       "unitPrice": 500,
       "quantity": 0,
       "totalPrice": 0,
-      "addedToCart": false
+      "addedToCart": false,
+      "catagory" : "Fast Food"
     },
     {
       "id": 6,
@@ -52,50 +57,16 @@
       "unitPrice": 300,
       "quantity": 0,
       "totalPrice": 0,
-      "addedToCart": false
+      "addedToCart": false,
+      "catagory" : "Fast Food"
     }
   ],
   "carts": [
-    {
-      "id": 1,
-      "imageURL": "https://images.unsplash.com/photo-1568901346375-23c9450c58cd?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=999&q=80",
-      "name": "Burger",
-      "unitPrice": 1000,
-      "quantity": 1,
-      "totalPrice": 1000,
-      "addedToCart": true
-    },
-    {
-      "id": 2,
-      "imageURL": "https://images.unsplash.com/photo-1590947132387-155cc02f3212?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80",
-      "name": "Pizzza",
-      "unitPrice": 900,
-      "quantity": 1,
-      "totalPrice": 900,
-      "addedToCart": true
-    },
-    {
-      "id": 3,
-      "imageURL": "https://images.unsplash.com/photo-1555949258-eb67b1ef0ceb?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80",
-      "name": "Pastaa",
-      "unitPrice": 600,
-      "quantity": 1,
-      "totalPrice": 600,
-      "addedToCart": true
-    },
-    {
-      "id": 6,
-      "imageURL": "https://images.unsplash.com/photo-1523529738216-242467d60007?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=491&q=80",
-      "name": "Sandwitch",
-      "unitPrice": 300,
-      "quantity": 1,
-      "totalPrice": 300,
-      "addedToCart": true
-    }
+   
   ],
   "payment": {
-    "subtotal": 2800,
-    "shipping": 50,
-    "total": 2800
+    "subtotal": 0,
+    "shipping": 0,
+    "total": 0
   }
 }

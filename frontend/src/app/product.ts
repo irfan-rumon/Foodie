@@ -4,7 +4,7 @@ export interface Product {
     name: string;
     unitPrice : number;
     quantity: number;
-    totalPrice : number;
+    totalPrice: number;
     addedToCart: boolean ;
-
+    catagory?:string;
   }
