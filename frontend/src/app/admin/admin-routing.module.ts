@@ -10,6 +10,7 @@ import { OrderComponent } from './order/order.component';
 const routes: Routes = [
    
     //canActivate: [AuthGuard],
+      {path : '', component: AdminDashboardComponent},
       {  path: 'products', component: AdminProductsComponent},
       { path: 'products/add', component: AddProductsComponent},
       { path: 'products/:id/edit', component: EditProductComponent},
