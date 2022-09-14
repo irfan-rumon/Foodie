@@ -24,8 +24,8 @@
       "id": 3,
       "name": "Pastaa",
       "imageURL": "https://images.unsplash.com/photo-1555949258-eb67b1ef0ceb?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80",
-      "unitPrice": 600,
-      "quantity": 0,
+      "unitPrice": "650",
+      "quantity": "9",
       "totalPrice": 0,
       "addedToCart": false,
       "catagory": "Fast Food"
@@ -34,7 +34,7 @@
       "id": 4,
       "name": "Nodles",
       "imageURL": "https://images.unsplash.com/photo-1634864572865-1cf8ff8bd23d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1334&q=80",
-      "unitPrice": 700,
+      "unitPrice": "600",
       "quantity": 0,
       "totalPrice": 0,
       "addedToCart": false,
@@ -53,7 +53,7 @@
     {
       "imageURL": "https://images.unsplash.com/photo-1603105037880-880cd4edfb0d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80",
       "quantity": "1",
-      "unitPrice": "100",
+      "unitPrice": "200",
       "catagory": "chinese",
       "name": "Soup",
       "id": "8"

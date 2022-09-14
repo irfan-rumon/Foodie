@@ -25,6 +25,10 @@ export class AdminProductsComponent implements OnInit {
     this.productApi.deleteProduct(pr).subscribe(  () => (this.products = this.products.filter((p) => p.id !== pr.id)) );//internal array thekei delete
   }
 
+  onEdit(pr:Product){
+    this.router.navigate(['admin/products', pr.id, 'edit']);
+  }
+
   onAdd(){
     this.router.navigate(['admin/products/add']);
   }
