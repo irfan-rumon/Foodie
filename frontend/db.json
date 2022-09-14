@@ -31,16 +31,6 @@
       "catagory": "Fast Food"
     },
     {
-      "id": 4,
-      "name": "Nodles",
-      "imageURL": "https://images.unsplash.com/photo-1634864572865-1cf8ff8bd23d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1334&q=80",
-      "unitPrice": "600",
-      "quantity": 0,
-      "totalPrice": 0,
-      "addedToCart": false,
-      "catagory": "Chinese"
-    },
-    {
       "id": 5,
       "name": "Fried Rice",
       "imageURL": "https://images.unsplash.com/photo-1603133872878-684f208fb84b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1025&q=80",
@@ -60,6 +50,20 @@
     }
   ],
   "carts": [],
+  "orders": [
+    {
+      "id": 1,
+      "userId": 1,
+      "userAddress": "Mirpur-6, Dhaka",
+      "bill": 1500
+    },
+    {
+      "id": 2,
+      "userId": 2,
+      "userAddress": "Mirpur-1, Dhaka",
+      "bill": 1200
+    }
+  ],
   "payment": {
     "subtotal": 0,
     "shipping": 0,

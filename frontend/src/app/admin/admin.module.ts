@@ -9,6 +9,7 @@ import { AdminProductsComponent } from './admin-products/admin-products.componen
 import { AddProductsComponent } from './add-products/add-products.component';
 import { FormsModule } from '@angular/forms';
 import { EditProductComponent } from './edit-product/edit-product.component';
+import { OrderComponent } from './order/order.component';
 
 
 
@@ -20,6 +21,7 @@ import { EditProductComponent } from './edit-product/edit-product.component';
     AdminProductsComponent,
     AddProductsComponent,
     EditProductComponent,
+    OrderComponent,
    
    
   ],
