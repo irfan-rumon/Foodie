@@ -17,12 +17,19 @@ export class ProductComponent implements OnInit {
   products : Product[] = [];
   payment: Payment;
   cartProducts: Product[] = []; 
+  totalSub: number = 0;
+  shipping: number = 0;
+  totalTot: number = 0;
   
 
   constructor(  private paymentApi: PaymentInfoService, private productApi: ProductapiService, private cartApi: CartapiService, private router: Router  ) { }
 
   ngOnInit(): void {
-    this.productApi.getProducts().subscribe(  (products)=>(this.products = products)    );
+    this.productApi.getProducts().subscribe(  (products)=>{
+      this.products = products;
+       console.log(this.products);
+    })
+   
     
     this.paymentApi.getPaymentInfo().subscribe(  (payment)=>{
       this.payment = payment;
@@ -31,6 +38,16 @@ export class ProductComponent implements OnInit {
     this.cartApi.getProducts().subscribe(  (products) => {
         this.cartProducts = products;
       } );
+   }
+
+   ngOnDestroy():void{
+      console.log("hello");
+      let updatedPayment:Payment = {
+        subtotal : this.totalSub,
+        shipping: this.shipping,
+        total: this.totalTot
+     }
+     this.paymentApi.editPaymentInfo(updatedPayment).subscribe(  );
    }
 
  
@@ -56,24 +73,12 @@ export class ProductComponent implements OnInit {
       totalPrice : product.totalPrice + product.unitPrice,
       addedToCart : true
     }
-
-   
-    let updatedSubTotal = this.payment.subtotal + product.unitPrice;
-    let updatedTotal = this.payment.total + product.unitPrice ;
-    if( this.cartProducts.length == 0){
-        updatedTotal += 50;
-    }
-
-    let updatedPayment:Payment = {
-       subtotal : updatedSubTotal,
-       shipping: 50,
-       total: updatedTotal
-    }
+    this.totalSub += product.unitPrice;
+    this.totalTot += product.unitPrice;
+    this.shipping = 50;
 
     this.cartApi.addProduct(updatedProduct).subscribe( 
       (product)=>{this.cartProducts.push(updatedProduct)} );//Internal array te push
-    this.paymentApi.editPaymentInfo(updatedPayment).subscribe();
-   
     
   }
 
