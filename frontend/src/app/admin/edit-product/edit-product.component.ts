@@ -25,8 +25,10 @@ export class EditProductComponent implements OnInit {
   }
 
   onSubmit(){
-    this.productApi.editProduct(this.productId, this.product).subscribe();
-    this.router.navigate(['/admin/products']);
+    this.productApi.editProduct(this.productId, this.product).subscribe( ()=>{
+      this.router.navigate(['/admin/products']); //subscribe er vitore korle page reload hoy na
+    });
+   
   }
 
 }

@@ -19,7 +19,9 @@ export class AddProductsComponent implements OnInit {
 
   onSubmit(){
     console.log(this.product);
-    this.productApi.addProduct(this.product).subscribe();
-    this.router.navigate(['/admin/products']);
+    this.productApi.addProduct(this.product).subscribe(  ()=>{
+      this.router.navigate(['/admin/products']); //subscribe er vitore korle page reload hoy na
+    } );
+   
   }
 }

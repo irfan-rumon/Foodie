@@ -34,22 +34,66 @@
       "id": 5,
       "name": "Fried Rice",
       "imageURL": "https://images.unsplash.com/photo-1603133872878-684f208fb84b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1025&q=80",
-      "unitPrice": 500,
-      "quantity": 0,
+      "unitPrice": "400",
+      "quantity": "6",
       "totalPrice": 0,
       "addedToCart": false,
       "catagory": "Fast Food"
     },
     {
-      "imageURL": "https://images.unsplash.com/photo-1603105037880-880cd4edfb0d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80",
-      "quantity": "1",
-      "unitPrice": "200",
+      "id": "77",
+      "name": "biriany",
+      "catagory": "rice",
+      "unitPrice": "500",
+      "quantity": "5",
+      "imageURL": "https://images.unsplash.com/photo-1603105037880-880cd4edfb0d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80"
+    },
+    {
+      "id": "54",
+      "name": "shirt",
+      "catagory": "clothe",
+      "unitPrice": "55",
+      "quantity": "31",
+      "imageURL": "https://images.unsplash.com/photo-1603105037880-880cd4edfb0d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80"
+    },
+    {
+      "id": "321",
+      "name": "React",
       "catagory": "chinese",
-      "name": "Soup",
-      "id": "8"
+      "unitPrice": "400",
+      "quantity": "8",
+      "imageURL": "https://images.unsplash.com/photo-1603105037880-880cd4edfb0d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80"
     }
   ],
-  "carts": [],
+  "carts": [
+    {
+      "id": 2,
+      "imageURL": "https://images.unsplash.com/photo-1590947132387-155cc02f3212?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80",
+      "name": "Pizzza",
+      "unitPrice": 900,
+      "quantity": 1,
+      "totalPrice": 900,
+      "addedToCart": true
+    },
+    {
+      "id": 3,
+      "imageURL": "https://images.unsplash.com/photo-1555949258-eb67b1ef0ceb?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80",
+      "name": "Pastaa",
+      "unitPrice": "650",
+      "quantity": "91",
+      "totalPrice": "0650",
+      "addedToCart": true
+    },
+    {
+      "id": 5,
+      "imageURL": "https://images.unsplash.com/photo-1603133872878-684f208fb84b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1025&q=80",
+      "name": "Fried Rice",
+      "unitPrice": "400",
+      "quantity": "61",
+      "totalPrice": "0400",
+      "addedToCart": true
+    }
+  ],
   "orders": [
     {
       "id": 1,
@@ -65,8 +109,8 @@
     }
   ],
   "payment": {
-    "subtotal": 0,
-    "shipping": 0,
-    "total": 0
+    "subtotal": "900650400",
+    "shipping": 50,
+    "total": "900650400"
   }
 }
